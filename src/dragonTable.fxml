@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TableController">
+   <children>
+      <Label fx:id="tableLabel" text="List of dragons">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <padding>
+            <Insets bottom="20.0" top="20.0" />
+         </padding>
+      </Label>
+      <TableView fx:id="table" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="250.0" prefWidth="1420.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="75.0" text="id" />
+          <TableColumn fx:id="dragonNameColumn" prefWidth="75.0" text="name" />
+            <TableColumn prefWidth="75.0" text="x_coor" fx:id="x_coordinateColumn" />
+            <TableColumn fx:id="y_coordinateColumn" prefWidth="75.0" text="y_coor" />
+            <TableColumn fx:id="dateColumn" prefWidth="100.0" text="date" />
+            <TableColumn fx:id="dragonAgeColumn" prefWidth="75.0" text="age" />
+            <TableColumn fx:id="dragonDescriptionColumn" prefWidth="100.0" text="description" />
+            <TableColumn fx:id="dragonWeightColumn" prefWidth="75.0" text="weight" />
+            <TableColumn fx:id="dragonTypeColumn" prefWidth="130.0" text="type" />
+            <TableColumn fx:id="personNameColumn" prefWidth="100.0" text="killer_name" />
+            <TableColumn fx:id="personHeightColumn" prefWidth="100.0" text="killer_height" />
+            <TableColumn fx:id="personWeightColumn" prefWidth="100.0" text="killer_weight" />
+            <TableColumn prefWidth="75.0" text="x" fx:id="xColumn" />
+            <TableColumn fx:id="yColumn" prefWidth="75.0" text="y" />
+            <TableColumn fx:id="zColumn" prefWidth="75.0" text="z" />
+            <TableColumn fx:id="locationNameColumn" prefWidth="120.0" text="location_name" />
+        </columns>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </TableView>
+      <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="500.0">
+         <children>
+            <Label fx:id="fieldLabel" text="field">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Label>
+            <ChoiceBox fx:id="fieldsChoiceBox" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="120.0">
+               <HBox.margin>
+                  <Insets right="80.0" />
+               </HBox.margin>
+            </ChoiceBox>
+            <Button fx:id="sortButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#sort" prefHeight="30.0" prefWidth="110.0" text="Sort">
+               <HBox.margin>
+                  <Insets right="80.0" />
+               </HBox.margin>
+            </Button>
+            <Label fx:id="valueLabel" text="value">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="valuesTextField" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="80.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="filterButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#filter" prefHeight="30.0" prefWidth="110.0" text="Filter">
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="500.0">
+         <children>
+            <Button fx:id="updateButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#update" prefHeight="30.0" prefWidth="110.0" text="Update">
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="menuButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToMenu" prefHeight="30.0" prefWidth="110.0" text="Menu">
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="visualisationButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToVisualisation" prefHeight="30.0" prefWidth="110.0" text="Visualisation" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

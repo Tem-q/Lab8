@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UpdateFromTableController">
+   <children>
+      <Label fx:id="dragonLabel" text="Change the characteristics of the dragon">
+         <padding>
+            <Insets top="40.0" />
+         </padding>
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="60.0" prefWidth="800.0">
+         <children>
+            <Label fx:id="dragonNameLabel" text="name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="dragonNameTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="dragonAgeLabel" text="age">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="dragonAgeTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="dragonWeightLabel" text="weight">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="dragonWeightTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="dragonTypeLabel" text="type">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <ChoiceBox fx:id="dragonTypeChoiceBox" prefHeight="30.0" prefWidth="100.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="60.0" prefWidth="800.0">
+         <children>
+            <Label text="x coordinate" fx:id="x_coordinateLabel">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" fx:id="x_coordinateTextField">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="y_coordinateLabel" text="y coordinate">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="y_coordinateTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="dragonDescriptionLabel" text="description">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="dragonDescriptionTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <Label fx:id="locationLabel" text="Change the characteristics of the location">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+      </Label>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="60.0" prefWidth="800.0">
+         <children>
+            <Label fx:id="locationNameLabel" text="name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="locationNameTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="locationXLabel" text="x">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="locationXTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="locationYLabel" text="y">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="locationYTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="locationZLabel" text="z">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="locationZTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="100.0" />
+         </children>
+      </HBox>
+      <Label fx:id="killerLabel" text="Change the characteristics of the killer">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <padding>
+            <Insets top="30.0" />
+         </padding>
+      </Label>
+      <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="60.0" prefWidth="800.0">
+         <children>
+            <Label fx:id="personNameLabel" text="name">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="personNameTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="personHeightLabel" text="height">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="personHeightTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </TextField>
+            <Label fx:id="personWeightLabel" text="weight">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="personWeightTextField" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="100.0">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <Button fx:id="updateButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#update" prefHeight="30.0" prefWidth="100.0" text="Update">
+         <VBox.margin>
+            <Insets bottom="30.0" top="30.0" />
+         </VBox.margin>
+      </Button>
+      <Button fx:id="cancelButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#close" prefHeight="30.0" prefWidth="100.0" text="Cancel" />
+   </children>
+</VBox>

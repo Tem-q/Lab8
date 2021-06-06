@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="490.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MenuController">
+   <children>
+      <Label fx:id="menuLabel" text="Choose action">
+         <font>
+            <Font size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="10.0" top="30.0" />
+         </padding>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="helpButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#help" prefHeight="30.0" prefWidth="80.0" text="Help">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="infoButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#info" prefHeight="30.0" prefWidth="80.0" text="Info">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="headButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#head" prefHeight="30.0" prefWidth="80.0" text="Head">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="removeHeadButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#removeHead" prefHeight="30.0" prefWidth="120.0" text="Remove head">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="addButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToAdd" prefHeight="30.0" prefWidth="80.0" text="Add">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="addMaxButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToAddIfMax" prefHeight="30.0" prefWidth="80.0" text="Add max">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="updateButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToUpdate" prefHeight="30.0" prefWidth="80.0" text="Update">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="clearButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#clear" prefHeight="30.0" prefWidth="80.0" text="Clear">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="filterLessThanAgeButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToFilterLessThanAge" prefHeight="30.0" prefWidth="90.0" text="Filter age">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="filterContainsNameButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToFilterContainsName" prefHeight="30.0" prefWidth="100.0" text="Filter name">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="sumOfAgeButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#sumOfAge" prefHeight="30.0" prefWidth="100.0" text="Sum of age">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="removeByIdButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToRemoveById" prefHeight="30.0" prefWidth="120.0" text="Remove by id">
+               <HBox.margin>
+                  <Insets right="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="80.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="tableButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToTable" prefHeight="30.0" prefWidth="110.0" text="Dragon Table">
+               <HBox.margin>
+                  <Insets right="100.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="visualisationButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToVisualisation" prefHeight="30.0" prefWidth="110.0" text="Visualisation" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
