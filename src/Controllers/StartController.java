@@ -20,15 +20,10 @@ import java.util.ResourceBundle;
 public class StartController {
     private static Stage stage;
     private static Locale locale = new Locale("en", "US");
-    //private ResourceBundle rb;
 
     public static void setStage(Stage stage) {
         StartController.stage = stage;
     }
-
-    /*public static void setLocale(Locale locale) {
-        StartController.locale = locale;
-    }*/
 
     ObservableList<String> languages = FXCollections.observableArrayList("English", "Russian", "Spanish (Honduras)", "Ukrainian", "Macedonian");
 
@@ -39,16 +34,10 @@ public class StartController {
     private ChoiceBox<String> languageChoiceBox;
 
     @FXML
-    private Label enterLabel;
+    private Label startLabel;
 
     @FXML
     void goToLogin(ActionEvent event) throws IOException {
-        String language = languageChoiceBox.getValue();
-        if (language.equals("English")) locale = new Locale("en", "US");
-        if (language.equals("Russian")) locale = new Locale("ru", "RU");
-        if (language.equals("Spanish (Honduras)")) locale = new Locale("es", "HN");
-        if (language.equals("Ukrainian")) locale = new Locale("uk", "UA");
-        if (language.equals("Macedonian")) locale = new Locale("mk", "MK");
         setLocale();
         Parent content = FXMLLoader.load(getClass().getResource("../login.fxml"));
         Stage loginStage = ChangeWindowController.changeWindow(content, stage, "Login");
@@ -74,7 +63,7 @@ public class StartController {
         languageChoiceBox.setValue("English");
         languageChoiceBox.setItems(languages);
 
-        /*languageChoiceBox.setOnAction(new EventHandler<ActionEvent>() {
+        languageChoiceBox.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
                 String language = languageChoiceBox.getValue();
@@ -86,28 +75,12 @@ public class StartController {
 
                 ResourceBundle rb = ResourceBundle.getBundle("text", locale);
 
-                /*String buttonText = rb.getString("entrance.button");
-                buttonText = new String(buttonText.getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
+                String start = rb.getString("start.label");
+                start = new String(start.getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
 
-                String nick = rb.getString("nickname.label");
-                nick = new String(nick.getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
-
-                String password = rb.getString("password.label");
-                password = new String(password.getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
-
-                String langs = rb.getString("languages.label");
-                langs = new String(langs.getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
-
-                String header = rb.getString("login.label");
-                header = new String(header.getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
-
-                entrance.setText(buttonText);
-                nickLabel.setText(nick);
-                passwordLabel.setText(password);
-                languagesLabel.setText(langs);
-                headerLabel.setText(header);
+                startLabel.setText(start);
             }
-        });*/
+        });
     }
 
 }

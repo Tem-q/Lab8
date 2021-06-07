@@ -131,8 +131,13 @@ public class VisualisationController {
                 }
             });
 
+            /*String hex = convertStringToHex(viewDragons.get(i).getDragon().getUser());
+            hex = (hex.length() > 6 ? hex.substring(0, 6) : hex);
+            while (hex.length() < 6) {
+                hex += "0";
+            }*/
 
-            Color color = setColor(viewDragons.get(i), users, colors);//Color.CORAL;//Color.web("#" + hex);
+            Color color = setColor(viewDragons.get(i), users, colors); //Color.web("#" + hex);
             rectangle.setFill(color);
             Text text = new Text(viewDragons.get(i).getDragon().getName());
             text.setFill(Color.WHITE);
@@ -169,6 +174,17 @@ public class VisualisationController {
         String stringToSet = rb.getString(text);
         stringToSet = new String(stringToSet.getBytes(StandardCharsets.ISO_8859_1), StandardCharsets.UTF_8);
         return stringToSet;
+    }
+
+    public static String convertStringToHex(String str) {
+        StringBuffer hex = new StringBuffer();
+        for (char temp : str.toCharArray()) {
+            int decimal = (int) temp;
+            hex.append(Integer.toHexString(decimal));
+        }
+
+        return hex.toString();
+
     }
 
     private List<ViewDragon> getPositions(List<Dragon> dragons) {
@@ -214,7 +230,7 @@ public class VisualisationController {
     }
 
     private Color setColor(ViewDragon viewDragon, List<String> users, List<Color> colors) {
-        for (int i = 0; i < users.size()-1; i++) {
+        for (int i = 0; i < users.size(); i++) {
             if (viewDragon.getDragon().getUser().equals(users.get(i))) {
                 return colors.get(i);
             }

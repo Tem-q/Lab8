@@ -14,6 +14,7 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 import java.util.ResourceBundle;
@@ -33,9 +34,6 @@ public class LoginController {
 
     @FXML
     private Label enterLabel;
-
-    @FXML
-    private Label registrationLabel;
 
     @FXML
     private Button registrationButton;
@@ -96,7 +94,6 @@ public class LoginController {
         enterLabel.setText(setString("enter.button"));
         loginLabel.setText(setString("login.label"));
         passwordLabel.setText(setString("password.label"));
-        registrationLabel.setText("registration.label");
         loginButton.setText(setString("login.button"));
         registrationButton.setText(setString("registration.button"));
     }

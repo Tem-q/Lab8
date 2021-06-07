@@ -216,8 +216,8 @@ public class AddController {
         dragonAgeLabel.setText(setString("dragonAge.label"));
         dragonWeightLabel.setText(setString("dragonWeight.label"));
         dragonTypeLabel.setText(setString("dragonType.label"));
-        x_coordinateLabel.setText("x_coordinate.label");
-        y_coordinateLabel.setText("y_coordinate.label");
+        x_coordinateLabel.setText("xcoordinate.label");
+        y_coordinateLabel.setText("ycoordinate.label");
         dragonDescriptionLabel.setText(setString("dragonDescription.label"));
         locationXLabel.setText(setString("locationX.label"));
         locationYLabel.setText(setString("locationY.label"));

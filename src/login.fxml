@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
@@ -16,7 +17,7 @@
    <children>
       <HBox alignment="CENTER" prefHeight="85.0" prefWidth="600.0">
          <children>
-            <Label fx:id="enterLabel" alignment="CENTER" contentDisplay="TOP" prefHeight="50.0" prefWidth="190.0" text="Welcome">
+            <Label fx:id="enterLabel" alignment="CENTER" contentDisplay="TOP" prefHeight="50.0" prefWidth="190.0" text="Hello">
                <font>
                   <Font size="24.0" />
                </font>
@@ -53,17 +54,18 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="54.0" prefWidth="600.0">
          <children>
-            <Button fx:id="loginButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToMenu" prefHeight="30.0" prefWidth="100.0" text="login" />
+            <Button fx:id="loginButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToMenu" prefHeight="30.0" prefWidth="100.0" text="login">
+               <font>
+                  <Font name="Arial" size="15.0" />
+               </font></Button>
          </children>
       </HBox>
       <HBox alignment="CENTER" prefHeight="54.0" prefWidth="600.0">
          <children>
-            <Label fx:id="registrationLabel" alignment="CENTER" prefHeight="25.0" prefWidth="95.0" text="First time?">
+            <Button fx:id="registrationButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToRegistration" prefHeight="30.0" prefWidth="100.0" text="registration">
                <font>
-                  <Font size="14.0" />
-               </font>
-            </Label>
-            <Button fx:id="registrationButton" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#goToRegistration" prefHeight="30.0" prefWidth="100.0" text="registration" />
+                  <Font name="Arial" size="15.0" />
+               </font></Button>
          </children>
       </HBox>
    </children>
